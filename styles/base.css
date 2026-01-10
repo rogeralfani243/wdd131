@@ -1,0 +1,266 @@
+/* Base styles and CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    box-shadow: var(--box-shadow);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-menu a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Cards Grid Layout */
+.cards-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: var(--text-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+
+}
+.card1{
+    width: 900px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+}
+
+.text-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-content li {
+    margin-bottom: 0.5rem;
+}
+
+.text-content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-content a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.image-content {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+#image-content-first  {
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    margin-bottom: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+.image-content img {
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.location, .caption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+#lastModified {
+    color: var(--light-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 1rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-menu a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-content-first{
+        display: flex;
+        flex: 1
+    }
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #image-content-first{
+        height: auto;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #course-title {
+        font-size: 1.2rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .card-content {
+        flex-direction: column;
+    }
+}
