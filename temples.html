@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album - A collection of beautiful LDS temple photographs">
+    <title>Temple Album | Sacred Architecture</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS files (mobile first) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🏛️ Temple Album</h1>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Old</a></li>
+                    <li><a href="#" class="nav-link">New</a></li>
+                    <li><a href="#" class="nav-link">Large</a></li>
+                    <li><a href="#" class="nav-link">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Sacred Temples Around the World</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/salt_lake_temple.webp" 
+                     alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple - Utah, USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/washington_temple.jpg" 
+                     alt="Washington D.C. Temple" loading="lazy">
+                <figcaption>Washington D.C. Temple - Maryland, USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lawai_temple.jpg" 
+                     alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple - Hawaii, USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa_temple.jpg" 
+                     alt="Mesa Arizona Temple" loading="lazy">
+                <figcaption>Mesa Arizona Temple - Arizona, USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sao_paulo_brazil_temple.jpg" 
+                     alt="São Paulo Brazil Temple" loading="lazy">
+                <figcaption>São Paulo Brazil Temple - Brazil</figcaption>
+            </figure>
+            <figure>
+                <img src="images/london_temple.jpg" 
+                     alt="London England Temple" loading="lazy">
+                <figcaption>London England Temple - England, UK</figcaption>
+            </figure>
+            <figure>
+                <img src="images/seoul_temple.jpg" 
+                     alt="Seoul Korea Temple" loading="lazy">
+                <figcaption>Seoul Korea Temple - South Korea</figcaption>
+            </figure>
+            <figure>
+                <img src="images/spain_temple.jpg" 
+                     alt="Barcelona Spain Temple" loading="lazy">
+                <figcaption>Barcelona Spain Temple - Spain</figcaption>
+            </figure>
+            <figure>
+                <img src="images/auckland_temple.webp" 
+                     alt="Auckland New Zealand Temple" loading="lazy">
+                <figcaption>Auckland New Zealand Temple - New Zealand</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Temple Album | ROGER ALFANI</p>
+            <p class="location"> Salt Lake City, Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</body>
+</html>

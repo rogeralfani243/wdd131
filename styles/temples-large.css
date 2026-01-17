@@ -1,0 +1,127 @@
+/* Desktop/Large View - temples-large.css */
+
+@media screen and (min-width: 768px) {
+    /* Header adjustments */
+    .header-content {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    /* Hide hamburger, show full navigation */
+    .hamburger {
+        display: none;
+    }
+    
+    nav {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background: transparent;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        gap: var(--spacing-md);
+    }
+    
+    .nav-link {
+        border: none;
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: 4px;
+    }
+    
+    .nav-link:hover {
+        transform: translateY(-2px);
+        background-color: var(--secondary-color);
+    }
+    
+    /* Main content adjustments */
+    main {
+        padding: 0 var(--spacing-lg);
+        margin: var(--spacing-xl) auto;
+    }
+    
+    main h2 {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    /* Gallery Grid for desktop */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    /* Hover effects for desktop */
+    figure {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    figure::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+    
+    figure:hover::before {
+        opacity: 1;
+    }
+    
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        color: var(--text-light);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        z-index: 2;
+    }
+    
+    figure:hover figcaption {
+        transform: translateY(0);
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Large desktop screens */
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    figure img {
+        height: 300px;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
