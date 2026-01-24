@@ -4,7 +4,10 @@
   --green: #009543;
   --card-bg: rgba(255, 255, 255, 0.85);
 }
+body{
 
+    margin: 0;
+}
 header {
   background-color: var(--red);
   color: white;
@@ -13,6 +16,7 @@ header {
   font-size: 2rem;
   font-weight: bold;
   border-radius: 5px;
+  left: 0;
 }
 .hero {
   position: relative;
