@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced Temple Album - A responsive collection of LDS temples with filtering capabilities">
+    <title>Enhanced Temple Album | Filtered Temples</title>
+    <meta name="author" content="Roger Alfani">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-place-of-worship"></i> Enhanced Temple Album</h1>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" id="home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" id="old" class="nav-link"><i class="fas fa-landmark"></i> Old</a></li>
+                    <li><a href="#" id="new" class="nav-link"><i class="fas fa-star"></i> New</a></li>
+                    <li><a href="#" id="large" class="nav-link"><i class="fas fa-expand"></i> Large</a></li>
+                    <li><a href="#" id="small" class="nav-link"><i class="fas fa-compress"></i> Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filter-info">
+                <h2 id="filter-title">All Temples</h2>
+                <p id="filter-description">Click on the filter buttons to display specific temples</p>
+                <p class="temple-count" id="temple-count">Loading temples...</p>
+            </div>
+            
+            <div class="gallery" id="temples-container">
+                <!-- Temple cards will be dynamically generated here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Enhanced Temple Album | ROGER ALFANI</p>
+            <p class="location">Salt Lake City, Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Images courtesy of The Church of Jesus Christ of Latter-day Saints</p>
+        </div>
+    </footer>
+</body>
+</html>
