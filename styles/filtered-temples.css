@@ -147,6 +147,7 @@ main {
 }
 
 .temple-card {
+    animation: fadeIn 0.6s ease forwards;
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
@@ -323,6 +324,3 @@ footer p {
     }
 }
 
-.temple-card {
-    animation: fadeIn 0.6s ease forwards;
-}
