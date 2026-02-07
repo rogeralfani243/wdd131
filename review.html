@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | WDD 131</title>
+    <meta name="description" content="Thank you for submitting your review">
+    <meta name="author" content="Roger Alfani">
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Review Submitted Successfully!</h1>
+            <p>Thank you for sharing your feedback</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="confirmation-card">
+            <div class="success-icon">✓</div>
+            <h2>Your Review Has Been Received</h2>
+            <p>We appreciate you taking the time to share your experience with our product.</p>
+            
+            <div class="review-summary">
+                <h3>Review Summary</h3>
+                <div id="reviewData">
+                    <!-- Review data will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="counter-display">
+                <p>Total Reviews Submitted: <span id="reviewCounter">0</span></p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="form.html" class="btn">Submit Another Review</a>
+                <a href="/" class="btn secondary">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Roger Alfani | Product Review Form | WDD 131</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
